@@ -1,3 +1,11 @@
 # pscan.js
 
-A script for port scanning internal network hosts. It uses `fetch` and `AbortController` to quickly enumerate a given subnet. Live demo: [pscanjs.web.app](https://pscanjs.web.app)
+A script for port scanning internal network hosts. It uses `fetch` and `AbortController` to quickly find open ports. Live demo: [pscanjs.web.app](https://pscanjs.web.app).
+
+
+## Method
+
+* Create a list of `(host, port)` pairs
+* For each address, send an HTTPS request via `fetch`
+* If the request hasn't resolved after 500 ms, ignore
+* If it did resolve, `host:port` is probably open
