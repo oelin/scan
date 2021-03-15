@@ -8,4 +8,4 @@ A script for port scanning internal network hosts. It uses `fetch` and `AbortCon
 * Create a list of `(host, port)` pairs
 * For each address, send an HTTPS request via `fetch`
 * If the request hasn't resolved after 500 ms, ignore
-* If it did resolve, `host:port` is probably open
+* If it has resolved, `host:port` is probably open
