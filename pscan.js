@@ -30,7 +30,7 @@ function check_port(host, port, time, cb) {
   let signal = controller.signal
 
 
-  fetch(`http://${host}:${port}`, {
+  fetch(`https://${host}:${port}`, {
     mode: 'no-cors',
     signal
   })
@@ -42,12 +42,11 @@ function check_port(host, port, time, cb) {
 }
 
 
-
-async function port_scan(start, stop, ports) {
+function port_scan(start, stop, ports, cb) {
 
   for (let host of ip_range(start, stop)) {
     for (let port of ports) {
-      check_port(host, port, 400, console.log)
+      check_port(host, port, 500, cb)
     }
   }
 }
