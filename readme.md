@@ -5,7 +5,7 @@ Browser-based port scanning for fun and profit! 🥳👌
 ## Installation
 
 ```sh
-ve oelin/scan
+vee oelin/scan
 ```
 
 ## Explanation
