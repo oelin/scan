@@ -1,3 +1,3 @@
 # Scan
 
-A library and script for port scanning internal network hosts. It uses `fetch` and `AbortController` to quickly find open ports. Live demo: [pscanjs.web.app](https://pscanjs.web.app).
+Scan is a simple script for finding open ports on internal and network hosts, all from within the context of a modern web browser. It makes use of APIs such as `Fetch` and `AbortController` to high-speed connect-based scans of a given IP/port range. Check out [this live demonstration](https://pscanjs.web.app).
